@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "535559818264",
+    "project_id": "zovtrans",
+    "storage_bucket": "zovtrans.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535559818264:android:877d7f0f3aa8d0036d076d",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535559818264-fs1j6bi85f2abg21p9v20hrrmhbdo4cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp4uVC6xwTeuwlBnkgXQ2E3Bwicv1PBLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535559818264-fs1j6bi85f2abg21p9v20hrrmhbdo4cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
