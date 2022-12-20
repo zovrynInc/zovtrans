@@ -2,6 +2,7 @@ package com.example.myapplication.data
 
 import com.example.myapplication.R
 import com.example.myapplication.model.Affirmation
+import com.example.myapplication.model.MessageListObj
 
 class Datasource {
 
@@ -17,6 +18,15 @@ class Datasource {
             Affirmation(R.string.affirmation8),
             Affirmation(R.string.affirmation9),
             Affirmation(R.string.affirmation10)
+        )
+    }
+
+    fun loadMList(): List<MessageListObj> {
+        return listOf<MessageListObj>(
+            MessageListObj("sssss","aaaa","wwww,","wwwwedd"),
+            MessageListObj("ddddd","aaaa","22wdd,","wwwwedd"),
+            MessageListObj("qqqqq","ccccc","sksskksksk,","wwwwedd"),
+
         )
     }
 }

@@ -1,5 +1,6 @@
 package com.example.myapplication.ui.messages
 
+import android.content.ContentValues
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.databinding.FragmentDashboardBinding
+import com.example.myapplication.firebase.AuthFuncs
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -43,14 +45,18 @@ class MessagesFragment : Fragment() {
             textView2.text = it
         }
         auth = Firebase.auth
-        Log.d("TAG", "sssss  ${auth.currentUser == null}")
+        Log.d("eee", "sssss  ${auth.currentUser == null}")
 
 //
 //        auth.currentUser?.let { Log.d("TAG", it.uid) }
 //        Log.d("TAG", "sssss")
 //        val bbbbb = auth.currentUser == null
-//        Log.d("TAG","$bbbbb" )
+        Log.d("TAG","bbbbbgggggggggjhu" )
+//    var bbb  = AuthFuncs().returnAuth()
+//                Log.d("TAGsss","$bbb" )
+//        Log.d(ContentValues.TAG, "ddddddddeee data: ${bbb}")
 
+//
         return root
     }
 
