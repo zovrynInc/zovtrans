@@ -39,11 +39,11 @@ class HeroProfileFragment : Fragment() {
         _binding = FragmentHeroProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textView3
+        val profileRowTextView1: TextView = binding.profileRowTextView1
 //        val textView2: TextView = binding.textDashboard33
 
         dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+            profileRowTextView1.text = it
         }
 //        dashboardViewModel.eeetext.observe(viewLifecycleOwner) {
 //            textView2.text = it

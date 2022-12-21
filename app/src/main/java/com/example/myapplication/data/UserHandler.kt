@@ -71,4 +71,12 @@ class UserHandler {
             .await()
         return querySnapshot.documents
     }
+
+    suspend fun getMultipleUsers(type: String): List<DocumentSnapshot> {
+        val querySnapshot = db.collection("Users")
+//            .whereEqualTo("type", type)
+            .get()
+            .await()
+        return querySnapshot.documents
+    }
 }

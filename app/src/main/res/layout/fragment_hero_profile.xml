@@ -5,13 +5,120 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+    <ImageView
+        android:id="@+id/profileTabImageView"
+        android:layout_width="418dp"
+        android:layout_height="328dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="376dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/profileRowTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Age" />
+
+
+            <TextView
+                android:id="@+id/profileRowTextView1Col2"
+
+                android:text="Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_column="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/profileRowTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Height" />
+
+
+            <TextView
+                android:id="@+id/profileRowTextView2Col2"
+
+                android:text="Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_column="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/profileRowTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Body Type" />
+
+
+            <TextView
+                android:id="@+id/profileRowTextView3Col2"
+
+                android:text="Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_column="2" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/profileRowTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Bio" />
+
+
+            <TextView
+                android:id="@+id/profileRowTextView4Col2"
+
+                android:text="Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_column="2" />
+
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

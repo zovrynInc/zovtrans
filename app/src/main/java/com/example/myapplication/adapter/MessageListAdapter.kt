@@ -21,8 +21,12 @@ class MessageListAdapter(
     class MessageListViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.textView2)
 //        val imgview: ImageView = view.findViewById(R.id.imageView)
+val profileImageView: ImageView = view.findViewById(R.id.messageListImageView)
 
     }
+
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MessageListAdapter.MessageListViewHolder {
         val adapterLayout = LayoutInflater.from(parent.context)
             .inflate(R.layout.message_list_item, parent, false)
@@ -41,6 +45,6 @@ class MessageListAdapter(
 //        TODO("Not yet implemented")
         val item = dataset[position]
         holder.textView.text = item.lastChecked//context.resources.getString(item.stringResourceId)
-
+//        holder.profileImageView.setImageBitmap()
     }
 }

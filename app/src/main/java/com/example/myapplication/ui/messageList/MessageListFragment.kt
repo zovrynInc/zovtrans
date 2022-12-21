@@ -60,22 +60,23 @@ class MessageListFragment : Fragment() {
 //        val textView: TextView = binding.
 //        val textView2: TextView = binding.textDashboard33
 //
-//        dashboardViewModel.text.observe(viewLifecycleOwner) {
+        dashboardViewModel.mListDataSet.observe(viewLifecycleOwner) {
 //            textView.text = it
-//        }
-
-        dashboardViewModel.launchDataLoad()
-        val myDataset = Datasource().loadMList()
+            val myDataset = it
 //    myDataset.
-        val recyclerView: RecyclerView = binding.messageListRecyclerView//root.findViewById(R.id.recycler_view)
+            val recyclerView: RecyclerView = binding.messageListRecyclerView//root.findViewById(R.id.recycler_view)
 //        val manager = Manager
-        recyclerView.layoutManager = LinearLayoutManager(context)
+            recyclerView.layoutManager = LinearLayoutManager(context)
 
 
 
 //        recyclerView.layoutManager = manager;
 
-        recyclerView.adapter = MessageListAdapter(this,myDataset)
+            recyclerView.adapter = MessageListAdapter(this,myDataset)
+        }
+
+        dashboardViewModel.launchDataLoad()
+
         var userToReturn: UserObj? = null
 
 
