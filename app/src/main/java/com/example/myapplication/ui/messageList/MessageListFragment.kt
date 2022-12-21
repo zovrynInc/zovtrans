@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.adapter.MessageListAdapter
 //import com.example.myapplication.adapter.MessageListAdapter
 import com.example.myapplication.data.Datasource
 import com.example.myapplication.data.UserHandler
@@ -63,18 +64,18 @@ class MessageListFragment : Fragment() {
 //            textView.text = it
 //        }
 
-//        dashboardViewModel.launchDataLoad()
-//        val myDataset = Datasource().loadMList()
+        dashboardViewModel.launchDataLoad()
+        val myDataset = Datasource().loadMList()
 //    myDataset.
-//        val recyclerView: RecyclerView = binding.messageListRecyclerView//root.findViewById(R.id.recycler_view)
-////        val manager = Manager
-//        recyclerView.layoutManager = LinearLayoutManager(context)
-//
-//
-//
-////        recyclerView.layoutManager = manager;
-//
-//        recyclerView.adapter = MessageListAdapter(this,myDataset)
+        val recyclerView: RecyclerView = binding.messageListRecyclerView//root.findViewById(R.id.recycler_view)
+//        val manager = Manager
+        recyclerView.layoutManager = LinearLayoutManager(context)
+
+
+
+//        recyclerView.layoutManager = manager;
+
+        recyclerView.adapter = MessageListAdapter(this,myDataset)
         var userToReturn: UserObj? = null
 
 

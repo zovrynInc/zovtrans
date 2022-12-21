@@ -1,5 +1,6 @@
 package com.example.myapplication.adapter
 
+import android.graphics.Bitmap
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +14,7 @@ import com.example.myapplication.ui.home.HomeFragment
 
 class ItemAdapter(
     private val context: HomeFragment,
-    private val dataset: List<Affirmation>
+    private val dataset: List<Bitmap>
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     // Provide a reference to the views for each data item
@@ -22,7 +23,7 @@ class ItemAdapter(
     // Each data item is just an Affirmation object.
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.homeTextView)
-        val imgview: ImageView = view.findViewById(R.id.imageView)
+        val imgview: ImageView = view.findViewById(R.id.home_image_view)
 
     }
 
@@ -44,8 +45,9 @@ class ItemAdapter(
         val item = dataset[position]
 //        var  marker = getResources().getDrawable(R.drawable.restaurant);
 //        val drawable22 = ResourcesCompat.getDrawable( R.drawable.crayjesuus_background, null)
-        holder.textView.text = context.resources.getString(item.stringResourceId)
+//        holder.textView.text = context.resources.getString(item.stringResourceId)
 //        holder.imgview.setImageResource(R.drawable.crayjesuus_background)
+        holder.imgview.setImageBitmap(item)
 //        ContextCompat.getDrawable(context, crayjesuus_background)
 
 //        val drawable: Drawable = getResources().getDrawable(crayjesuus_background)
