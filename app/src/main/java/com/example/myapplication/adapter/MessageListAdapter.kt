@@ -9,11 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.model.Affirmation
 import com.example.myapplication.model.MessageListObj
+import com.example.myapplication.model.MessageListRecyclerViewElement
 import com.example.myapplication.ui.messageList.MessageListFragment
 
 class MessageListAdapter(
     private val context: MessageListFragment,
-    private val dataset: List<MessageListObj>
+    private val dataset: List<MessageListRecyclerViewElement>
 ) : RecyclerView.Adapter<MessageListAdapter.MessageListViewHolder>() {
 
 
@@ -44,7 +45,7 @@ val profileImageView: ImageView = view.findViewById(R.id.messageListImageView)
     override fun onBindViewHolder(holder: MessageListViewHolder, position: Int) {
 //        TODO("Not yet implemented")
         val item = dataset[position]
-        holder.textView.text = item.lastChecked//context.resources.getString(item.stringResourceId)
+        holder.textView.text = "item."//context.resources.getString(item.stringResourceId)
 //        holder.profileImageView.setImageBitmap()
     }
 }

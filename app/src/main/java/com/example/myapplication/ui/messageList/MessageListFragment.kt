@@ -16,6 +16,8 @@ import com.example.myapplication.adapter.MessageListAdapter
 import com.example.myapplication.data.Datasource
 import com.example.myapplication.data.UserHandler
 import com.example.myapplication.databinding.FragmentMessageListBinding
+import com.example.myapplication.model.MessageListObj
+import com.example.myapplication.model.MessageListRecyclerViewElement
 import com.example.myapplication.model.UserObj
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.*
@@ -60,9 +62,45 @@ class MessageListFragment : Fragment() {
 //        val textView: TextView = binding.
 //        val textView2: TextView = binding.textDashboard33
 //
+//
+// _tmpnamess
+
+        dashboardViewModel.tmparr.observe(viewLifecycleOwner) {
+            var wwww = it
+            for(varss:UserObj in it ){
+                Log.d("TAG", "eeeee0000 is ${varss.uid}")
+                Log.d("TAG", "eeeee022 is ${varss.userName}")
+
+            }
+
+        }
+
+
+
+        dashboardViewModel.eeetext.observe(viewLifecycleOwner) {
+//            var wwww = it
+            Log.d("TAG", "messageListArrr is ${it}")
+
+            for(mloToUse:MessageListObj in it ){
+//                Log.d("TAG", "messageListArrr is ${it}")
+//                Log.d("TAG", "mlo obj owner is ${mloToUse.uidToUse}")
+//
+//                Log.d("TAG", "mlo lastMsg is ${mloToUse.lastMsg}")
+
+            }
+
+        }
+
+
         dashboardViewModel.mListDataSet.observe(viewLifecycleOwner) {
 //            textView.text = it
-            val myDataset = it
+            Log.d("TAG", "eeeee1111 is $it")
+
+
+//            val myDataset = it
+
+            val testArr = listOf<MessageListRecyclerViewElement>()
+            val myDataset = testArr
 //    myDataset.
             val recyclerView: RecyclerView = binding.messageListRecyclerView//root.findViewById(R.id.recycler_view)
 //        val manager = Manager

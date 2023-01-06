@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.R
 import com.example.myapplication.adapter.ItemAdapter
 import com.example.myapplication.data.Datasource
 import com.example.myapplication.data.UserHandler
@@ -88,6 +89,11 @@ class HomeFragment : Fragment() {
 //        }
     }
 
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setSupportActionBar(findViewById(R.id.muhtoolbar))
+//
+//    }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

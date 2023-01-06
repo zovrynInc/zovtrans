@@ -21,12 +21,12 @@ class Datasource {
         )
     }
 
-    fun loadMList(): List<MessageListObj> {
-        return listOf<MessageListObj>(
-            MessageListObj("sssss","aaaa","wwww,","wwwwedd"),
-            MessageListObj("ddddd","aaaa","22wdd,","wwwwedd"),
-            MessageListObj("qqqqq","ccccc","sksskksksk,","wwwwedd"),
-
-        )
-    }
+//    fun loadMList(): List<MessageListObj> {
+//        return listOf<MessageListObj>(
+//            MessageListObj("sssss","aaaa","wwww,","wwwwedd"),
+//            MessageListObj("ddddd","aaaa","22wdd,","wwwwedd"),
+//            MessageListObj("qqqqq","ccccc","sksskksksk,","wwwwedd"),
+//
+//        )
+//    }
 }
